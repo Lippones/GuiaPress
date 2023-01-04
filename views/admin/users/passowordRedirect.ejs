@@ -1,0 +1,17 @@
+<%- include('../../partials/header.ejs') %>
+<%- include('../../partials/navbar.ejs') %>
+<div class="container">
+    <div class="card-header mt-6">
+        <h1 style="text-align:center;">Senha incorreta, Aguarde você seéa redirecionado</h1>
+        
+    </div>
+    <div class="card-body">
+        <a href="/admin/users">Ou click aqui</a>
+    </div>
+</div>
+<script>
+    setTimeout(() => {
+        window.location.href = '/admin/users'
+    }, 5000);
+</script>
+<%- include('../../partials/footer.ejs') %>
