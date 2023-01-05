@@ -86,12 +86,7 @@ router.post('/users/update',(req,res)=>{
     User.findOne({
         where:{
             [Op.or]:[
-                {
-                    email
-                },
-                {
-                    userName
-                }
+               id
             ]
         }
     }).then((user)=>{
